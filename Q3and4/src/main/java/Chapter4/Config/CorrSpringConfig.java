@@ -7,6 +7,7 @@ import Chapter4.lsp.correction.Helicopter;
 import Chapter4.ocp.correction.ocpAeroplane;
 import Chapter4.srp.correction.srpAeroplaneImpl;
 import Chapter4.srp.correction.srpHelicopterImpl;
+import Chapter4.dip.correction.dipAeroplane;
 
 @Configuration
 public class CorrSpringConfig {
@@ -34,6 +35,10 @@ public class CorrSpringConfig {
     public srpHelicopterImpl getsrpHelicopterImpl()
     {
         return new srpHelicopterImpl();
+    }
+    @Bean(name="dipcorrAeroplane")
+    public dipAeroplane getdipAeroplane() {
+        return new dipAeroplane();
     }
 }
 

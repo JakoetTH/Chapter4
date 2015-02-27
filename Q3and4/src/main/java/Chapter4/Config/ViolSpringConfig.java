@@ -8,6 +8,7 @@ import Chapter4.lsp.violation.Helicopter;
 import Chapter4.ocp.violation.ocpAeroplane;
 import Chapter4.srp.violation.srpAeroplane;
 import Chapter4.srp.violation.srpHelicopter;
+import Chapter4.dip.violation.dipAeroplane;
 
 @Configuration
 public class ViolSpringConfig {
@@ -33,5 +34,9 @@ public class ViolSpringConfig {
     @Bean(name="srpviolHelicopter")
     public srpHelicopter getsrpHelicopter() {
         return new srpHelicopter();
+    }
+    @Bean(name="dipviolAeroplane")
+    public dipAeroplane getdipAeroplane() {
+        return new dipAeroplane();
     }
 }
