@@ -11,6 +11,7 @@ import Chapter4.srp.violation.srpHelicopter;
 import Chapter4.dip.violation.dipAeroplane;
 import Chapter4.isp.violation.ispAeroplaneCommands;
 import Chapter4.isp.violation.ispAeroplaneDetails;
+import Chapter4.plk.violation.plkAeroplane;
 
 @Configuration
 public class ViolSpringConfig {
@@ -48,5 +49,9 @@ public class ViolSpringConfig {
     @Bean(name="ispviolAeroplaneDetails")
     public ispAeroplaneDetails getispAeroplaneDetails() {
         return new ispAeroplaneDetails();
+    }
+    @Bean(name="plkviolAeroplane")
+    public plkAeroplane getplkAeroplane() {
+        return new plkAeroplane();
     }
 }
