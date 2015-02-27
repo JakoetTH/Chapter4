@@ -5,7 +5,10 @@
   <groupId>Chapter4</groupId>
   <artifactId>Chapter4</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <modules>
+        <module>Q2</module>
+    </modules>
+    <packaging>pom</packaging>
 
   <name>Chapter4</name>
   <url>http://maven.apache.org</url>
