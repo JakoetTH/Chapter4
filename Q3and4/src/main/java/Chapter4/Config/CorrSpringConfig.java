@@ -11,6 +11,8 @@ import Chapter4.dip.correction.dipAeroplane;
 import Chapter4.isp.correction.ispAeroplaneCommands;
 import Chapter4.isp.correction.ispAeroplaneDetails;
 import Chapter4.plk.correction.plkAeroplane;
+import Chapter4.adp.correction.adpHelicopter;
+
 @Configuration
 public class CorrSpringConfig {
     @Bean(name="lspcorrAeroplane")
@@ -56,6 +58,11 @@ public class CorrSpringConfig {
     public plkAeroplane getplkAeroplane()
     {
         return new plkAeroplane();
+    }
+    @Bean(name="adpcorrHelicopter")
+    public adpHelicopter getadpHelicopter()
+    {
+        return new adpHelicopter();
     }
 }
 
