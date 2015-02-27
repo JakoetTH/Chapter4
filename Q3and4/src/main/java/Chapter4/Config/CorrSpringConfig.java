@@ -8,6 +8,8 @@ import Chapter4.ocp.correction.ocpAeroplane;
 import Chapter4.srp.correction.srpAeroplaneImpl;
 import Chapter4.srp.correction.srpHelicopterImpl;
 import Chapter4.dip.correction.dipAeroplane;
+import Chapter4.isp.correction.ispAeroplaneCommands;
+import Chapter4.isp.correction.ispAeroplaneDetails;
 
 @Configuration
 public class CorrSpringConfig {
@@ -39,6 +41,16 @@ public class CorrSpringConfig {
     @Bean(name="dipcorrAeroplane")
     public dipAeroplane getdipAeroplane() {
         return new dipAeroplane();
+    }
+    @Bean(name="ispcorrAeroplaneCommands")
+    public ispAeroplaneCommands getispAeroplaneCommands()
+    {
+        return new ispAeroplaneCommands();
+    }
+    @Bean(name="ispcorrAeroplaneDetails")
+    public ispAeroplaneDetails getisAeroplaneDetails()
+    {
+        return new ispAeroplaneDetails();
     }
 }
 
