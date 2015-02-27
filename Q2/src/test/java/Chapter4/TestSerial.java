@@ -20,7 +20,7 @@ public class TestSerial {
         helicopter = (Helicopter)ctx.getBean("HelicopterBean");
     }
     @Test
-    public void testFlyHelicopter()
+    public void testFlyHelicopter() throws Exception
     {
         Assert.assertEquals("AOE-123",helicopter.airlineequipment.generateSerialNumber());
     }

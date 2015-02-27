@@ -20,7 +20,7 @@ public class TestFly {
         helicopter = (Helicopter)ctx.getBean("HelicopterBean");
     }
     @Test
-    public void testFlyHelicopter()
+    public void testFlyHelicopter() throws Exception
     {
         Assert.assertEquals("Helicopter is now flying.",helicopter.aircraft.fly());
     }
