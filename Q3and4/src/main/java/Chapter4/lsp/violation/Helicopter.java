@@ -4,9 +4,9 @@ package Chapter4.lsp.violation;
  * Created by student on 2015/02/27.
  */
 public class Helicopter implements Aircraft {
-    public void flyForwards()
+    public String flyForwards()
     {
-        System.out.println("The Helicopter is flying forwards.");
+        return "The Helicopter is flying forwards.";
     }
     public void flyBackwards()
     {

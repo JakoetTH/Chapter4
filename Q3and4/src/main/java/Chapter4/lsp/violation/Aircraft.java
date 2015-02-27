@@ -2,6 +2,6 @@ package Chapter4.lsp.violation;
 
 
 public interface Aircraft {
-    public void flyForwards();
+    public String flyForwards();
     public void flyBackwards();
 }
