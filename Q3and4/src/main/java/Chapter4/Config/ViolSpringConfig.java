@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import Chapter4.lsp.violation.Aeroplane;
 import Chapter4.lsp.violation.Helicopter;
+import Chapter4.ocp.violation.ocpAeroplane;
 
 @Configuration
 public class ViolSpringConfig {
@@ -17,5 +18,10 @@ public class ViolSpringConfig {
     public Helicopter getlspHelicopter()
     {
         return new Helicopter();
+    }
+    @Bean(name="ocpviolAeroplane")
+    public ocpAeroplane getocpAeroplane()
+    {
+        return new ocpAeroplane();
     }
 }
